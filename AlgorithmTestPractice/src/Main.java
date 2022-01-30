@@ -2,7 +2,6 @@ import java.util.*;
 
 public class Main {
     public static int F, S, G, U, D;
-    public static int[] dist;
     public static boolean[] visited;
 
     public static void main(String args[]) {
