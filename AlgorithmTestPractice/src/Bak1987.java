@@ -18,7 +18,7 @@ public class Bak1987 {
         StringTokenizer st;
         st = new StringTokenizer(s);
         R = Integer.parseInt(st.nextToken()); //첫번째 호출
-        C = Integer.parseInt(st.nextToken()); //두번째 호
+        C = Integer.parseInt(st.nextToken()); //두번째 호출
         arr = new int[R][C];
         for(int i=0;i<R;i++) {
             String str = br.readLine();
