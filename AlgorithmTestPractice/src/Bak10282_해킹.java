@@ -81,8 +81,8 @@ public class Bak10282_해킹 {
             Computer p = pq.poll();
             visit[p.end] = true;
             for(Computer i:com.get(p.end)) {
-                if(!visit[i.end]) {
-                    dp[i.end] = Math.min(dp[i.end], i.time + p.time);
+                if(!visit[i.end] && dp[i.end] > i.time + p.time) {
+                    dp[i.end] = i.time + p.time;
                     pq.offer(new Computer(i.end,dp[i.end]));
                 }
             }
